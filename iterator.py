@@ -27,6 +27,6 @@ def totalSum(): #Total sum function
         cIn = cout #carry in 
             
     sumF.reverse() #Reverse the list as it print in descending order
- 
-    print("Sum:",sumF) #Print total sum
+    carry=cIn
+    print("Carry:",carry) #Print the carry out
 

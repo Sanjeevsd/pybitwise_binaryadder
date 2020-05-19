@@ -1,12 +1,15 @@
 import sys #sytem import
 import iterator as m1 #import as m1
 from inputNumber import BinaryConversion #import BinaryConversion
-no3=[] #list
+no3=[]
 global n5 #global variables
 def output(): #output function
+    n=''
     for i in range (len(m1.sumF)): #length sum
         no = str(m1.sumF[i]) #change to string
-        no3.append(no) #add no list
+        n=n+no #add no list
+        no3.append(no)
+    print("The binary sum is:",n)
 
 def magic(no3): #magic function             
     no3 = map(str, no3) #map string and no3
