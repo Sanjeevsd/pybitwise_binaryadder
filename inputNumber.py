@@ -1,4 +1,4 @@
-
+import sys #sytem import
 def BinaryConversion():
     i = False
     while not i:
@@ -23,8 +23,9 @@ def BinaryConversion():
             
     no3=int(i1) #adding no3 and no3 int 
     no4=int(i2)
-    
-    if int(no3)<=128 and int(no3)>=0 and int(no4)<=128 and int(no4)>=0:#check condition
+    list1=[] #Creating empty list1 and list2
+    list2=[]
+    if int(no3)<=255 and int(no3)>=0 and int(no4)<=255 and int(no4)>=0 and (no3+no4)<=255:#check condition
         db1=bin(no3) #Conversion of integer to binary number
         db2=bin(no4)
         l1=list(db1) #Adding binary number in lists
@@ -38,8 +39,7 @@ def BinaryConversion():
         while len(l2F) <8:
             l2F.insert(0,0)
         
-        list1=[] #Creating empty list1 and list2
-        list2=[]
+        
 
         for i in range(len(l1F)):
             l=int(l1F[i]) #Converting string values to Integer
@@ -48,7 +48,6 @@ def BinaryConversion():
             list2.append(m)
            
     else : #Display error message if input doesn't match if loop condition
-            print("ERROR! The value must not exceed or less than the actual size of byte-coded integer 0 and 255")
-            print("Enter number between 0 and 128!!")
-            print(BinaryConversion())
+            print("ERROR! The sum value must not exceed or less than the actual size of byte-coded integer 0 and 255")
+            sys.exit()
     return list1, list2 #Returns list1 and list 2

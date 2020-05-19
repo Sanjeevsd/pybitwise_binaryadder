@@ -8,8 +8,9 @@ def output(): #output function
     for i in range (len(m1.sumF)): #length sum
         no = str(m1.sumF[i]) #change to string
         n=n+no #add no list
+
         no3.append(no)
-    print("The binary sum is:",n)
+    print("The binary sum is:",int(n))
 
 def magic(no3): #magic function             
     no3 = map(str, no3) #map string and no3

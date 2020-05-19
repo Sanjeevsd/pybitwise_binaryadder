@@ -8,6 +8,7 @@ def totalSum(): #Total sum function
     sumF=[] #Create list
     cIn=0 #Initializing varibales carry in as 0
     li1, li2 = BinaryConversion() #Convert lil 1 and list 2 into binary conversion
+    
     x1=len(li1)-1 #Minus -1 from list 1 and 2
     x2=len(li2)-1 
     #print(li1,li2) #Display lil1 and list 2
