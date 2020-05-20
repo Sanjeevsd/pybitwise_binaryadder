@@ -26,7 +26,7 @@ output() #output
 n=magic(no3) #sum of lists
 print("Decimal output is",n) #display m
 i3 = input("Do you want to Continued the program? (Y/N)") #take input
-while i3=="y": #if yes
+while i3=="y" or i3=="Y": #if yes
     m1.li1.clear() #clear lil1 and li2
     m1.li2.clear()
     m1.sumF.clear()
