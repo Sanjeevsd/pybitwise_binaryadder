@@ -3,15 +3,25 @@ def BinaryConversion():
     i = False
     while not i:
         i1 = input("Enter First Decimal Number?") #Input integer i1
+        while int(i1)>255:
+            print("Error! Input must be between 0-255")
+            i1 = input("Enter First Decimal Number?") #Input integer i1
         i2 = input("Enter Second Decimal Number?") #Input integer i2
+        while int(i2)>255:
+            print("Error! Input must be between 0-255")
+            i2 = input("Enter First Decimal Number?") #Input integer i2
         n1=list(i1) #Creates new list ie seperates the digits(eg 55=[5,5])
         n2=list(i2)
+        if int(i1)>255 or int(i2)>255:
+            print("Error! Input must not be between 0-255")
+            sys.exit()
         nos=['0','1','3','2','4','5','6','7','8','9'] #Values inside nos list
         for each in n1: #Check n1
             if each not in nos: #Not in nos list
                 print("---------------------------------------")
                 print("Error! Please enter valid number") #Print error
                 break # break  loop
+            
         else:
             for each in n2: #check n2
                 if each in nos:

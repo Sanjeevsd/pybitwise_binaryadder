@@ -1,7 +1,7 @@
 import sys #sytem import
 import iterator as m1 #import as m1
 from inputNumber import BinaryConversion #import BinaryConversion
-no3=[]
+no3=[] #list variable
 global n5 #global variables
 def output(): #output function
     n=''
